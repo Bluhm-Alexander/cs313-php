@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Alex's Psersonal Website</title>
+		<title>Alex's Personal Website</title>
 		<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">
 	</head>
 	<body>
@@ -15,8 +15,7 @@
 		
 		<!-- Navigation Pane -->
 			<div class="side_content">
-				<p>Assignments</p>
-						<?php include('includes/nav.php'); ?>
+				<?php include('includes/nav.php'); ?>
 			</div>
 			<!-- content specific to navigated pages will be 
 			after this point contained in other html files -->

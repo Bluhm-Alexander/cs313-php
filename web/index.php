@@ -2,9 +2,8 @@
   include('includes/header.php');
 ?>
 
-				<p>About Me Place Holder</p>
+				<p>About Me Under Construction</p>
 				
-			</div>
-		</div>
-	</body>
-</html>
+<?php
+  include('includes/footer.php');
+?>
