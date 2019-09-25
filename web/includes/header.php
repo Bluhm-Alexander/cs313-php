@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div class="header">
-			<h1 class="site_header_style">CS-313 Web Engineering II Hompage Classwork</h1>
+			<h1 class="site_header_style">CS-313 Web Engineering II Classwork</h1>
 			<h2 class="site_header_style">By Alexander Bluhm</h2>
 		</div>
 		
