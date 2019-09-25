@@ -19,6 +19,11 @@ ul {
 	list-style-type:	none;
 }
 
+.site_header_style {
+	padding:			0;
+	margin:				0;
+}
+
 .header {
 	border:				3px solid black;
 	border-radius:		10px 30px 2px 2px;
@@ -46,6 +51,10 @@ ul {
 						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
 }
 
+.nav_parent_tree {
+	padding:			0;
+}
+
 .container {
 
 }
@@ -56,7 +65,7 @@ ul {
 	height:				100%;
 	/*border:				3px solid black;*/
 	border-radius:		2px;
-	width:				234px;
+	width:				214px;
 	float:				left;
 	z-index:			1;
 }

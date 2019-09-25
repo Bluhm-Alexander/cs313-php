@@ -1,6 +1,6 @@
 <a href="index.php">Home</a>
 <p>Assignments</p>
-<ul>
+<ul class="nav_parent_tree">
 	<li>Week01:</li>
 		<ul>
 			<li><a href="hello.php">Prove01: Hello World</a></li>
