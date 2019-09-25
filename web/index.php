@@ -1,14 +1,10 @@
-<html>
-	<head>
-		<title>Alex's Psersonal Homepage</title>
-	</head>
-	<body>
-		<h1>Information about Me</h1>
+<?php
+  include('includes/header.php');
+?>
+
+				<p>About Me Place Holder</p>
+				
+			</div>
+		</div>
 	</body>
 </html>
-
-<?php
-
-  phpinfo();
-
-?>

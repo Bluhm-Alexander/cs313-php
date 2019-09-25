@@ -1,0 +1,72 @@
+/*
+Made By Alex Bluhm for CS313 Class
+*/
+
+*, html {
+	margin:				0 auto auto auto;
+	padding:			0;
+	max-width:			900px;
+	font-family:		Roboto;
+}
+
+html {
+	background-image:	url("CloudsInSky.png");
+}
+
+body {
+	margin:				0;
+	padding:			0;
+}
+
+.header {
+	border:				3px solid black;
+	border-radius:		10px 30px 2px 2px;
+	margin:				10px auto auto auto;
+	padding:			20px 30px 10px;
+	z-index:			100;
+	background-color:	122c74;
+	color:				white;
+	-webkit-font-smoothing: antialiased;
+	text-shadow:		1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+						#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+
+.container {
+
+}
+
+.side_content {
+	padding: 10px;
+	background-color:	d5d5d5;
+	height:				100%;
+	/*border:				3px solid black;*/
+	border-radius:		2px;
+	width:				180px;
+	float:				left;
+	z-index:			1;
+}
+
+.main_contents {
+	padding:			10px 10px 10px 10px;
+	margin:				0 0 0 204px;
+	background-color:	ffffff;
+	height:				100%;
+	/*border:				3px solid black;*/
+	border-radius:		2px;
+	/*max-width:			650px;*/
+}
+
