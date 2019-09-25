@@ -9,16 +9,16 @@
 			<h2>By Alexander Bluhm</h2>
 		</div>
 		
-		<-- Main Body of the page -->
+		<!-- Main Body of the page -->
 		
 		<div class="container">
 		
-		<-- Navigation Pane -->
+		<!-- Navigation Pane -->
 			<div class="side_content">
 				<p>Assignments</p>
 						<?php include('includes/nav.php'); ?>
 			</div>
-			<-- content specific to navigated pages will be 
+			<!-- content specific to navigated pages will be 
 			after this point contained in other html files -->
 			
 			<div class="main_contents">
