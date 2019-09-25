@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<title>Alex's Personal Website</title>
-		<link rel = "stylesheet" type = "text/css" href = "includes/style_sheet.css">
 	</head>
 	<body>
 		<div class="header">
