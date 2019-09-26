@@ -23,6 +23,7 @@
 			<div class="side_content">
 				<?php
 					include('includes/nav.php'); 
+					echo getcwd();
 				?>
 			</div>
 			<!-- content specific to navigated pages will be 
