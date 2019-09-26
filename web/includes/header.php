@@ -16,7 +16,7 @@
 		<!-- Navigation Pane -->
 			<div class="side_content">
 				<?php
-					if(getcwd() != "/app/web") {
+					if(getcwd() == "/app/web") {
 						include('includes/nav.php'); 
 					}
 					else {
