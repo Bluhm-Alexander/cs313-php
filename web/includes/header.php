@@ -3,7 +3,7 @@
 		<title>Alex's Personal Website</title>
 		<?php
 			if(getcwd() != "/app/web") {
-				chdir('..');
+				chdir("..");
 			}
 			echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
 		?>
@@ -22,8 +22,10 @@
 		<!-- Navigation Pane -->
 			<div class="side_content">
 				<?php
-					include('includes/nav.php'); 
-					echo getcwd();
+					$directory = getcwd();
+					$directory .= 'includes/nav.php';
+					include($directory); 
+					echo $directort;
 				?>
 			</div>
 			<!-- content specific to navigated pages will be 
