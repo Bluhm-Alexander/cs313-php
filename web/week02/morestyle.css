@@ -1,0 +1,35 @@
+
+/*
+Additional style
+*/
+
+.hoverable:hover {
+	font-weight:			bold;
+}
+
+.hoverable {
+	text-align:				center;
+	vertical-align:			middle;
+	line-height:			100px;
+}
+
+#div1 {
+	background-color:		red;
+	height:					100px;
+	width:					100px;
+	margin:					40px 40px 40px 40px;		
+}
+
+#div2 {
+	background-color:		blue;
+	height:					100px;
+	width:					100px;
+	margin:					40px 40px 40px 40px;		
+}
+
+#div3 {
+	background-color:		green;
+	height:					100px;
+	width:					100px;
+	margin:					40px 40px 40px 40px;		
+}
