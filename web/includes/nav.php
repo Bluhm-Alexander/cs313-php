@@ -16,6 +16,6 @@
 	<li>Week02:</li>
 		<ul>
 			<li><a href="<?php echo $upOne; ?>week02/02teach.php">Teach02: Team Activity</a></li>
-			<li><a href="<?php echo $upOne; ?>week02/02prove.php">Prove02: Homepage</a></li>
+			<li><a href="<?php echo $upOne; ?>index.php">Prove02: Homepage</a></li>
 		</ul>
 </ul>
