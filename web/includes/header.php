@@ -2,12 +2,12 @@
 	<head>
 		<title>Alex's Personal Website</title>
 		<?php
+			$flag = "";
 			if(getcwd() != "/app/web") {
-				//chdir("..");
+				$flag = "../";
 			}
-			echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
 		?>
-			
+		<link rel = "stylesheet" type = "text/css" href = "<?php echo $flag; ?>style_sheet.css">
 	</head>
 	<body>
 		<div class="header">
