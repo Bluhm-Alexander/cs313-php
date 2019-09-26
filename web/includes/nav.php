@@ -3,7 +3,7 @@
 	if(getcwd() != "/app/web") {
 		$upOne = "../";
 	}
-	echo $upOne;
+	//echo $upOne;
 ?>
 
 <a href="index.php">Home</a>
@@ -11,7 +11,7 @@
 <ul class="nav_parent_tree">
 	<li>Week01:</li>
 		<ul>
-			<li><a href="<?php echo $upOne; ?>/week01/hello.php">Prove01: Hello World</a></li>
+			<li><a href="<?php echo $upOne; ?>hello.php">Prove01: Hello World</a></li>
 		</ul>
 	<li>Week02:</li>
 		<ul>
