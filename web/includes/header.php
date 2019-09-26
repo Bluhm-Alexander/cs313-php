@@ -29,7 +29,7 @@
 					//$directory .= '/includes/nav.php';
 					$directory = '/app/web/includes/nav.php';
 					include($directory); 
-					echo $directory;
+					//echo $directory;
 					//echo '\n';
 					//echo getcwd();
 				?>

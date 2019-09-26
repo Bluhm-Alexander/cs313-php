@@ -4,6 +4,7 @@
 	{
 		$upOne = "..";
 	}
+	echo $upOne;
 ?>
 
 <a href="index.php">Home</a>
