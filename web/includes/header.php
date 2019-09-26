@@ -1,7 +1,15 @@
 <html>
 	<head>
 		<title>Alex's Personal Website</title>
-		<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">
+		<?php
+			if(getcwd() == "/app/web") {
+				echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
+			}
+			else {
+				echo '<link rel = "stylesheet" type = "text/css" href = "../style_sheet.css">';
+			}
+		?>
+			
 	</head>
 	<body>
 		<div class="header">

@@ -1,6 +1,5 @@
 <?php
   include('../includes/header.php');
-  echo '<link rel = "stylesheet" type = "text/css" href = "../style_sheet.css">';
 ?>
 	<h1>Teach02: Team Activity</h1>
 
