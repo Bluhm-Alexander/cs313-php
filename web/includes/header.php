@@ -15,7 +15,10 @@
 		
 		<!-- Navigation Pane -->
 			<div class="side_content">
-				<?php include('includes/nav.php'); ?>
+				<?php 
+					echo getcwd();
+					include('includes/nav.php'); 
+				?>
 			</div>
 			<!-- content specific to navigated pages will be 
 			after this point contained in other html files -->
