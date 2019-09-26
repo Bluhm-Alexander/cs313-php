@@ -25,7 +25,7 @@
 					$directory = getcwd();
 					$directory .= 'includes/nav.php';
 					include($directory); 
-					echo $directort;
+					echo $directory;
 				?>
 			</div>
 			<!-- content specific to navigated pages will be 
