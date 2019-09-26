@@ -27,11 +27,11 @@
 				<?php
 					//$directory = getcwd();
 					//$directory .= '/includes/nav.php';
-					$directory = 'app/web/includes/nav.php';
+					$directory = '/app/web/includes/nav.php';
 					include($directory); 
 					echo $directory;
-					echo '\n';
-					echo getcwd();
+					//echo '\n';
+					//echo getcwd();
 				?>
 			</div>
 			<!-- content specific to navigated pages will be 
