@@ -23,7 +23,7 @@
 			<div class="side_content">
 				<?php
 					$directory = getcwd();
-					$directory .= 'includes/nav.php';
+					$directory .= '/includes/nav.php';
 					include($directory); 
 					echo $directory;
 				?>
