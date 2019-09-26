@@ -20,7 +20,7 @@
 						include('includes/nav.php'); 
 					}
 					else {
-						include('../includes/nav.php)
+						include('../includes/nav.php')
 					}
 				?>
 			</div>
