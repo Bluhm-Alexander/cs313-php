@@ -2,12 +2,10 @@
 	<head>
 		<title>Alex's Personal Website</title>
 		<?php
-			if(getcwd() == "/app/web") {
-				echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
+			if(getcwd() != "/app/web") {
+				chdir('..');
 			}
-			else {
-				echo '<link rel = "stylesheet" type = "text/css" href = "../style_sheet.css">';
-			}
+			echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
 		?>
 			
 	</head>
@@ -24,12 +22,7 @@
 		<!-- Navigation Pane -->
 			<div class="side_content">
 				<?php
-					if(getcwd() == "/app/web") {
-						include('includes/nav.php'); 
-					}
-					else {
-						include('../includes/nav.php');
-					}
+					include('includes/nav.php'); 
 				?>
 			</div>
 			<!-- content specific to navigated pages will be 
