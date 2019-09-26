@@ -2,8 +2,11 @@
 	<head>
 		<title>Alex's Personal Website</title>
 		<?php
+			$flag = 0;
+		
 			if(getcwd() != "/app/web") {
-				chdir("..");
+				//chdir("..");
+				flag = 1;
 			}
 			echo '<link rel = "stylesheet" type = "text/css" href = "style_sheet.css">';
 		?>
@@ -22,8 +25,9 @@
 		<!-- Navigation Pane -->
 			<div class="side_content">
 				<?php
-					$directory = getcwd();
-					$directory .= '/includes/nav.php';
+					//$directory = getcwd();
+					//$directory .= '/includes/nav.php';
+					$directory = 'app/web/includes/nav.php';
 					include($directory); 
 					echo $directory;
 				?>
