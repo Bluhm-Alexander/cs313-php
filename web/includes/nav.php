@@ -1,7 +1,6 @@
 <?php 
 	$upOne = "";
 	if(getcwd() != "/app/web") {
-	{
 		$upOne = "..";
 	}
 	echo $upOne;
