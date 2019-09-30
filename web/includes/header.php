@@ -17,8 +17,8 @@
 		</div>
 		
 		<ul class="nav_bar">
-			<li class="nav_items"><a class="nav_item_links" href="<?php echo $upOne; ?>index.php">Home</a></li>
-			<li class="nav_items"><a class="nav_item_links" href="<?php echo $upOne; ?>assignmentsList.php">Assignments</a></li>
+			<li class="nav_items"><a class="nav_item_links" href="<?php echo $flag; ?>index.php">Home</a></li>
+			<li class="nav_items"><a class="nav_item_links" href="<?php echo $flag; ?>assignmentsList.php">Assignments</a></li>
 		</ul>
 		
 		<!-- Main Body of the page -->
