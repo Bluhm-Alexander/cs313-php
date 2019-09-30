@@ -1,5 +1,5 @@
 <?php
-  include('../includes/header.php');
+  include('header.php');
 ?>
 	<div class="main_contents">
 		<h1>List of Assignments</h1>
@@ -8,5 +8,5 @@
 	</div>
 
 <?php
-  include('../includes/footer.php');
+  include('footer.php');
 ?>

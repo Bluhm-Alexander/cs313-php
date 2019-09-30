@@ -44,7 +44,7 @@
 				
 				<p>My name is Alexander Bluhm and this is my website for CS313: Web Engineering II</p>
 				
-				<img src="download.jfif" alt="Genesis Motherboard">
+				<img src="download.jfif" alt="Genesis Motherboard" width="560">
 				
 				<p>I like low level programming. Particularly I really like C and some assembly. 
 				I like to make things as small and as simple as possible. I also really like exotic 
