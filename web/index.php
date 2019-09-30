@@ -30,7 +30,7 @@
 					Use PHP to do something on the server.<br>
 					<br>
 					While most of this assignment is about reviewing client side Web development, 
-					you ought to make your page a .php file, and do at least one thing on the server (i.e. inside <?php ... ?> tags). 
+					you ought to make your page a .php file, and do at least one thing on the server (i.e. inside tags). 
 					This could be as simple as displaying the server time, or another common option is to use a php include to 
 					include the same header or navbar on each page. The exact things you do are up to you.
 				</p>
@@ -67,12 +67,12 @@
 				
 				<p>The story of the game will take place in modern day. The story will be about the main 
 				the main character Gage who lives on the east coast but boards a plane to spend the summer
-				with his cousin in California. While in california an alien space ship parks itself in 
+				with his cousin in California. While in California an alien space ship parks itself in 
 				Earth's orbit. It then scrambles all of earth's communications and for some reason 
 				everyone on earth gets 100IQ points smarter. Everything becomes chaos and Gage only 
 				wants to get home. While traveling home you pass through several insane towns and cities. 
 				One town worships the Motorola 68000, another town has been taken over by two rivaling
-				sandwhich companies and the delivery drivers are worshipped as Idols. The entire state 
+				sandwich companies and the delivery drivers are worshipped as Idols. The entire state 
 				of Arizona has been turned into a lush rain forest. As the story progresses you learn 
 				more about why the horrifying reason this is all happening and how it was a massive 
 				accident.</p>
