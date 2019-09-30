@@ -2,7 +2,9 @@
   include('../includes/header.php');
 ?>
 	<div class="main_contents">
-		<h1>Hello World</h1>
+		<h1>List of Assignments</h1>
+		
+		<p>Coming Soon</p>
 	</div>
 
 <?php
