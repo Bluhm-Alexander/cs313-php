@@ -70,13 +70,13 @@
 					<br>
 					Continents You Have Visited:<br>
 					<br>
-					<input type="checkbox" name="continents" value="North America"> North America<br>
-					<input type="checkbox" name="continents" value="South America"> South America<br>
-					<input type="checkbox" name="continents" value="Europe"> Europe<br>
-					<input type="checkbox" name="continents" value="Asia"> Asia<br>
-					<input type="checkbox" name="continents" value="Australia"> Australia<br>
-					<input type="checkbox" name="continents" value="Africa"> Africa<br>
-					<input type="checkbox" name="continents" value="Antarctica"> Antarctica<br>
+					<input type="checkbox" name="continents[]" value="North America"> North America<br>
+					<input type="checkbox" name="continents[]" value="South America"> South America<br>
+					<input type="checkbox" name="continents[]" value="Europe"> Europe<br>
+					<input type="checkbox" name="continents[]" value="Asia"> Asia<br>
+					<input type="checkbox" name="continents[]" value="Australia"> Australia<br>
+					<input type="checkbox" name="continents[]" value="Africa"> Africa<br>
+					<input type="checkbox" name="continents[]" value="Antarctica"> Antarctica<br>
 					<br>
 					Comments: &nbsp; <textarea name="comments" form="usrform" style="height:400px; width:400px">Enter text here...</textarea>
 					<br>

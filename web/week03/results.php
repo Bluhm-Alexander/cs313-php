@@ -8,8 +8,8 @@
 	<div class="main_contents">
 		<h1>Teach03: Team Activity Form Submission Results</h1>
 
-		<a href="03teach.php"><- Go Back to Form Page</a>
-		
+		<a href="03teach.php"><- Go Back to Form Page</a><br>
+		<br>
 		Name: &nbsp; <?php echo $_POST["name"]; ?><br>
 		E-mail: &nbsp; <?php echo $_POST["email"]; ?><br>
 		Major: &nbsp; <?php echo $_POST["major"]; ?><br>
