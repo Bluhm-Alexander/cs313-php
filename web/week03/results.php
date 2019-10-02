@@ -13,6 +13,13 @@
 		Name: &nbsp; <?php echo $_POST["name"]; ?><br>
 		E-mail: &nbsp; <?php echo $_POST["email"]; ?><br>
 		Major: &nbsp; <?php echo $_POST["major"]; ?><br>
+		Continents Visited:<br>
+		<?php
+			foreach($_POST['continents'] as $continent) {
+				echo $continent."<br>";
+			}
+		?><br>
+		<br>
 		Comments: &nbsp; <?php echo $_POST["comments"]; ?><br>
 			
 	</div>

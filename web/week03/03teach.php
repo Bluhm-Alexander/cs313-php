@@ -59,7 +59,7 @@
 			<div class="main_contents">
 				<h1>Teach03: Team Activity Form Submission</h1>
 
-				<form action="results.php" method="post">
+				<form action="results.php" method="post" id="usrform">
 					Name: &nbsp; <input type="text" name="name"><br>
 					E-mail: &nbsp; <input type="text" name="email"><br>
 					Major: <br>
@@ -78,7 +78,7 @@
 					<input type="checkbox" name="continents" value="Africa"> Africa<br>
 					<input type="checkbox" name="continents" value="Antarctica"> Antarctica<br>
 					<br>
-					Comments: &nbsp; <input type="text" name="comments" style="height:400px; width:400px"><br>
+					Comments: &nbsp; <textarea name="comments" form="usrform" style="height:400px; width:400px">Enter text here...</textarea>
 					<br>
 					<input type="submit">
 				</form>
