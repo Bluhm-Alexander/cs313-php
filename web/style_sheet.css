@@ -151,7 +151,7 @@ ul {
 	padding:			10px 10px 10px 10px;
 	margin:				0 0 0 250px;
 	background-color:	ffffff;
-	height:				auto;
+	min-height:			600px;
 	/*border:				3px solid black;*/
 	border-radius:		2px;
 	/*max-width:			650px;*/
