@@ -39,7 +39,7 @@
 					//$directory = getcwd();
 					//$directory .= '/includes/nav.php';
 					$directory = 'includes/nav.php';
-					if ($windows) {
+					if ($windows != "") {
 						include($windows); 
 					}
 					else {
