@@ -2,9 +2,17 @@
 	<head>
 		<title>Alex's Personal Website</title>
 		<?php
+			$windows = "";
 			$flag = "";
-			if(getcwd() != "/app/web") {
+			//For windows MAMP
+			$patternWin = "(web\\\\)";
+			if(preg_match('(web\\\\)', getcwd())) {
+				$flag = "..\\";
+				$windows = "..\\includes\\nav.php";
+			} elseif(preg_match('(web\/)', getcwd())) {
 				$flag = "../";
+			} else {
+				
 			}
 		?>
 		<link rel = "stylesheet" type = "text/css" href = "<?php echo $flag; ?>style_sheet.css">
@@ -30,8 +38,13 @@
 				<?php
 					//$directory = getcwd();
 					//$directory .= '/includes/nav.php';
-					$directory = '/app/web/includes/nav.php';
-					include($directory); 
+					$directory = 'includes/nav.php';
+					if ($windows) {
+						include($windows); 
+					}
+					else {
+						include($directory);
+					}
 					//echo $directory;
 					//echo '\n';
 					//echo getcwd();
@@ -39,4 +52,3 @@
 			</div>
 			<!-- content specific to navigated pages will be 
 			after this point contained in other html files -->
-			

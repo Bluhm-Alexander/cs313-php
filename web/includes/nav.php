@@ -1,9 +1,14 @@
 <?php 
+	//For windows MAMP
+	$patternWin = '(web\\\\)';
 	$upOne = "";
-	if(getcwd() != "/app/web") {
+	if(preg_match($patternWin, getcwd())) {
+		$upOne = "..\\";
+	} elseif(preg_match('(web\/)', getcwd())) {
 		$upOne = "../";
+	} else {
+	
 	}
-	//echo $upOne;
 ?>
 
 <a href="<?php echo $upOne; ?>index.php">Home</a>
@@ -21,5 +26,6 @@
 	<li>Week03:</li>
 		<ul>
 			<li><a href="<?php echo $upOne; ?>week03/03teach.php">Teach03: Team Activity</a></li>
+			<li><a href="<?php echo $upOne; ?>week03/prove03_browse.php">Prove03: Shopping Cart</a></li>
 		</ul>
 </ul>
