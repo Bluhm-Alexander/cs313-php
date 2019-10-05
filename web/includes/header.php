@@ -9,6 +9,7 @@
 			if(preg_match('(web\\\\)', getcwd())) {
 				$flag = "..\\";
 				$windows = "..\\includes\\nav.php";
+				$echo "found ?".getcwd()."<br>";
 			} elseif(preg_match('(web\/)', getcwd())) {
 				$flag = "../";
 			} else {
