@@ -39,12 +39,12 @@
 				<?php
 					//$directory = getcwd();
 					//$directory .= '/includes/nav.php';
-					$directory = 'includes/nav.php';
+					//$directory = 'includes/nav.php';
 					if ($windows != "") {
 						include($windows); 
 					}
 					else {
-						include($directory);
+						include($flag."includes/nav.php");
 					}
 					//echo $directory;
 					//echo '\n';
