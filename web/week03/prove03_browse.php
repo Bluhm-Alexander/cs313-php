@@ -1,16 +1,34 @@
 <?php
-		session_start();
+	session_start();
 		  
-		$_SESSION["shoppingCart"] = array("None", 0.00);
-		  
-		$items = array
-			(
-				array("Toilet Paper", 3.25),
-				array("Flour", 2.00),
-				array("Apples", 4.15),
-				array("Oranges", 2.60),
-				array("Baking Mix", 1.15)
-			);
+	$items = array
+		(
+			array("Toilet Paper", 3.25),
+			array("Flour", 2.00),
+			array("Apples", 4.15),
+			array("Oranges", 2.60),
+			array("Baking Mix", 1.15)
+		);
+		
+	if ( !isset($_SESSION["total"]) ) {
+		$_SESSION["total"] = 0;
+		$_SESSION["totalQty"] = 0;
+		for ($i=0; $i< count($items); $i++) {
+			$_SESSION["qty"][$i] = 0;
+			$_SESSION["amounts"][$i] = 0;
+		}
+	}
+	
+	//Add
+	if ( isset($_GET["add"]) )
+	{
+		$i = $_GET["add"];
+		$qty = $_SESSION["qty"][$i] + 1;
+		$_SESSION["amounts"][$i] = $items[$i][1] * $qty;
+		$_SESSION["cart"][$i] = $i;
+		$_SESSION["qty"][$i] = $qty;
+		$_SESSION["totalQty"] = $_SESSION["totalQty"] + 1;
+	}
 			
 		include('../includes/header.php');
 ?>
@@ -48,19 +66,38 @@
 			<div class="main_contents">
 				<h1>Prove03: Shopping Cart Browse Items</h1>
 				
-				<a href="prove03_view">View Cart (<?php  ?>)</a>
-				
 				<table style="width: 100%">
 					<tr>
-						<th>Item</th>
-						<th>Price</th>
+						<th align="left">Item</th>
+						<th align="right">Price</th>
 						<th></th>
 					</tr>
-					<?php for ($x = 0; $x < sizeof($items); $x++) {
-						echo "<tr><td>".$items[$x][0]."</td><td>".$items[$x][1]."</td><td><button type=\"button\">Click Me!</button></td></tr>\n";
+					<?php for ($x = 0; $x < sizeof($items); $x++) { ?>
+						<tr>
+							<td><?php echo $items[$x][0];?></td>
+							<td align="right">$<?php echo number_format((float)$items[$x][1], 2, '.', ''); ?></td>
+							<td><a type="button" href="?add=<?php echo $x; ?>">Add to Cart</a></td>
+						</tr>
+					<?php
 					}
 					?>
+
 				</table>
+				
+<!-- Place Holder -->
+				
+<!-- End of Place Holder -->
+				
+				
+				<a href="prove03_view.php">View Cart (
+				<?php 
+					if ( isset($_SESSION["cart"]) ) { 
+						echo $_SESSION["totalQty"];
+					}
+					else {
+						echo "0";
+					}
+						?>)</a>
 				
 			</div>
 			
