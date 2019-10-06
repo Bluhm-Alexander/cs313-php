@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	
+
 	$items = array
 		(
 			array("Toilet Paper", 3.25),
@@ -9,11 +9,10 @@
 			array("Oranges", 2.60),
 			array("Baking Mix", 1.15)
 		);
-	
+
 	include('../includes/header.php');
 ?>
-
-</div>
+	</div>
 		
 		<div id="requirements_div">
 			<div class="requirements_button" onclick="expandRequirements()">
@@ -22,35 +21,36 @@
 			<div class="requirements_text">
 				<h3>CORE REQUIREMENTS</h3>
 				<p>
-					Checkout<br>
+					Confirmation page<br>
 					<br>
-					The checkout page should ask the user for the different components of 
-					their address. (No credit card or other purchase information is 
-					collected, only an address.)<br>
-
-					It should have the option to complete the purchase or return to the cart.<br>
+					After completing the purchase from the checkout page, the user 
+					is shown a confirmation page. It should display all the items 
+					they have just purchased as well as the address to which it 
+					will be shipped.<br>
+					<br>
+					Make sure to check for malicious injection, especially from 
+					free-entry fields like the address.<br>
 				</p>
 			</div>
 		</div>
 		
 		<div class="container">
-		
+	
 			<div class="main_contents">
-				<h1>Prove03: Shopping Cart Check Out Items</h1>
-				
-				<a href="prove03_view.php">Back to View Cart</a>
-				
-				<h2>Enter Address</h2>
-				
-				<form action="prove03_confirmation.php" method="post" id="usrform">
-					Address 1: &nbsp; <input type="text" name="address1"><br>
-					Address 2: &nbsp; <input type="text" name="address2"><br>
-					Zip Code: &nbsp; <input type="number" name="zip"><br>
-					City: &nbsp; <input type="text" name="city"><br>
-					State: &nbsp; <input type="text" name="state"><br>
+				<h1>Prove03: Confirmation</h1>
+
+				<a href="prove03_browse.php"><- Go Back to Browse Items</a><br>
+				<p>
 					<br>
-					<button type="submit">Confirm Purchase</button>
-				</form>
+					Address 1: &nbsp; <?php echo $_POST["address1"]; ?><br>
+					Address 2: &nbsp; <?php echo $_POST["address2"]; ?><br>
+					Zip Code: &nbsp; <?php echo $_POST["zip"]; ?><br>
+					City: &nbsp; <?php echo $_POST["city"]; ?><br>
+					State: &nbsp; <?php echo $_POST["state"]; ?><br>
+					<br>
+				</p>
+				
+				<h2>Items Being Shipped</h2>
 				
 				<table style="width: 100%">
 					<tr>
@@ -75,7 +75,16 @@
 				</table>
 				
 				<p>Total : <?php echo(number_format((float)$total, 2, '.', '')); ?></p>
+				
 			</div>
+	
 <?php
-  include('../includes/footer.php');
+	//reset Cart
+	unset($_SESSION["qty"]); 
+	unset($_SESSION["amounts"]);
+	unset($_SESSION["total"]);
+	unset($_SESSION["cart"]);
+	unset($_SESSION["totalQty"]);
+	
+	include('../includes/footer.php');
 ?>
