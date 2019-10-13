@@ -1,0 +1,26 @@
+Users
+CREATE TABLE users (
+    id          SERIAL PRIMARY KEY,
+    first_name  VARCHAR(20),
+    last_name   VARCHAR(20));
+
+Conference Talks
+CREATE TABLE talks (
+    id          SERIAL PRIMARY KEY,
+    talk_date   DATE,
+    speaker_id  INTEGER REFERENCES speakers(id));
+
+Notes
+CREATE TABLE notes (
+    id          SERIAL PRIMARY KEY,
+    note        VARCHAR(100),
+    user_id     INTEGER REFERENCES users(id),
+    talk_id     INTEGER REFERENCES talks(id));
+
+Speakers
+CREATE TABLE speakers (
+    id          SERIAL PRIMARY KEY,
+    first_name  VARCHAR(20),
+    last_name   VARCHAR(20));
+
+

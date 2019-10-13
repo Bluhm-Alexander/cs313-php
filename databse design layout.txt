@@ -1,0 +1,71 @@
+CREATE TABLE Users (
+	PersonID		int		NOT NULL PRIMARY KEY,
+	Username		varchar(20)	NOT NULL UNIQUE,
+	Password		varchar(20),
+	FirstName		varchar(20),
+	LastName		varchar(20)
+);
+
+CREATE TABLE Routines (
+	RoutineID		int		NOT NULL PRIMARY KEY,
+	RoutineName		varchar(60)	NOT NULL,
+	Description		varchar(2000)	NOT NULL
+);
+
+CREATE TABLE Exercises (
+	ExerciseID		int		NOT NULL PRIMARY KEY,
+	ExerciseName		varchar(60)	NOT NULL,
+	Description		varchar(2000)	NOT NULL,
+	DefaultReps		int		NOT NULL,
+	BurnedCalories		int
+);
+
+
+CREATE TABLE Meals (
+	MealID			int		NOT NULL PRIMARY KEY,
+	MealName		varchar(60)	NOT NULL,
+	Description		varchar(2000)	NOT NULL,
+	DefaultCalories		int		NOT NULL,
+	DefaultProtein		int		NOT NULL
+);
+
+CREATE TABLE PersonalMealPlan (
+	PersonalMealPlanID	int		NOT NULL PRIMARY KEY,
+	MealID			int		REFERENCES Meals(MealID),
+	PersonID 		int		REFERENCES Users(PersonID),
+	MealPlanName		varchar(60),
+	DateStarted		date,
+	DateEnded		date
+);
+
+CREATE TABLE PersonalMealsEaten (
+	PersonalMealID		int		NOT NULL PRIMARY KEY,
+	PersonalMealPlanID	int		REFERENCES PersonalMealPlan(PersonalMealPlanID),
+	MealID			int		REFERENCES PersonalMealPlan(PersonalMealPlanID),
+	Calories		int,
+	Protein			int
+);
+
+CREATE TABLE PersonalRoutines (
+	PersonalRoutineID 	int		NOT NULL PRIMARY KEY,
+	PersonID 		int		REFERENCES Users(PersonID),
+	RoutineID 		int		REFERENCES Routiones(RoutineID),
+	RoutineDate		date,
+	Timetaken		int,
+	Completed		bool
+);
+
+CREATE TABLE RoutineExercises (
+	RoutineExerciseID	int		NOT NULL PRIMARY KEY,
+	RoutineID		int		REFERENCES Routines(RoutineID),
+	ExerciseID		int		REFERENCES Exercises(ExerciseID),
+	DefaultReps		int
+);
+
+CREATE TABLE PersonalRoutineExercises (
+	PersonalRoutineExerciseID	int	NOT NULL PRIMARY KEY,
+	PersonalRoutineID		int	REFERENCES Users(PersonalRoutines),
+	ExerciseID			int	REFERENCES RoutineExercises(ExerciseID),
+	NumberOfReps			int,
+	BurnedCalories			int
+);
