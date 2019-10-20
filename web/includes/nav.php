@@ -28,4 +28,8 @@
 			<li><a href="<?php echo $upOne; ?>week03/03teach.php">Teach03: Team Activity</a></li>
 			<li><a href="<?php echo $upOne; ?>week03/prove03_browse.php">Prove03: Shopping Cart</a></li>
 		</ul>
+    <li>Fitness Application:</li>
+        <ul>
+            <li><a href="<?php echo $upOne; ?>fitness/fitnessHomeScreen.php">Fitness Application</a></li>
+        </ul>
 </ul>

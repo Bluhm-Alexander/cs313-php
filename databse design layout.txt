@@ -9,14 +9,15 @@ CREATE TABLE Users (
 CREATE TABLE Routines (
 	RoutineID		int		NOT NULL PRIMARY KEY,
 	RoutineName		varchar(60)	NOT NULL,
-	Description		varchar(2000)	NOT NULL
+	Description		text	NOT NULL
 );
 
 CREATE TABLE Exercises (
 	ExerciseID		int		NOT NULL PRIMARY KEY,
 	ExerciseName		varchar(60)	NOT NULL,
-	Description		varchar(2000)	NOT NULL,
+	Description		text	NOT NULL,
 	DefaultReps		int		NOT NULL,
+	DefaultSets		int		NOT NULL,
 	BurnedCalories		int
 );
 
@@ -24,7 +25,7 @@ CREATE TABLE Exercises (
 CREATE TABLE Meals (
 	MealID			int		NOT NULL PRIMARY KEY,
 	MealName		varchar(60)	NOT NULL,
-	Description		varchar(2000)	NOT NULL,
+	Description		text	NOT NULL,
 	DefaultCalories		int		NOT NULL,
 	DefaultProtein		int		NOT NULL
 );
@@ -49,7 +50,7 @@ CREATE TABLE PersonalMealsEaten (
 CREATE TABLE PersonalRoutines (
 	PersonalRoutineID 	int		NOT NULL PRIMARY KEY,
 	PersonID 		int		REFERENCES Users(PersonID),
-	RoutineID 		int		REFERENCES Routiones(RoutineID),
+	RoutineID 		int		REFERENCES Routines(RoutineID),
 	RoutineDate		date,
 	Timetaken		int,
 	Completed		bool
@@ -59,13 +60,15 @@ CREATE TABLE RoutineExercises (
 	RoutineExerciseID	int		NOT NULL PRIMARY KEY,
 	RoutineID		int		REFERENCES Routines(RoutineID),
 	ExerciseID		int		REFERENCES Exercises(ExerciseID),
-	DefaultReps		int
+	DefaultReps		int, 
+	DefaultSets		int
 );
 
 CREATE TABLE PersonalRoutineExercises (
 	PersonalRoutineExerciseID	int	NOT NULL PRIMARY KEY,
-	PersonalRoutineID		int	REFERENCES Users(PersonalRoutines),
-	ExerciseID			int	REFERENCES RoutineExercises(ExerciseID),
+	PersonalRoutineID		int	REFERENCES PersonalRoutines(PersonalRoutineID),
+	RoutineExerciseID			int	REFERENCES RoutineExercises(RoutineExerciseID),
 	NumberOfReps			int,
+	NumberOfSets			int, 
 	BurnedCalories			int
 );

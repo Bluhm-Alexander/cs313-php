@@ -1,0 +1,37 @@
+/*
+Made By Alex Bluhm for CS313 Class
+*/
+
+.header {
+    max-width:			1437px;
+	width:			1437px;
+}
+
+.nav_bar {
+	width:				1503px;
+}
+
+#requirements_div {
+    left:				calc(50vw + 750px);
+}
+
+.container {
+    max-width:			1500px;
+    width:              1500px;
+}
+
+.framework {
+    display:            table;
+    width:              100%;
+    table-layout:       fixed; /* optional, for equal spacing */
+}
+
+.div-row {
+    display:            table-row;
+}
+
+.div-cell {
+    display:            table-cell;
+    /*width:              100%;*/
+    padding:            2px 2px 2px 2px;
+}
