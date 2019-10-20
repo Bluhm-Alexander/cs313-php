@@ -4,11 +4,11 @@ function get_db() {
 	$db = NULL;
 	try {
 		// default Heroku Postgres configuration URL
-		$dbUrl = getenv('postgres://ugnwjdmwxniiya:2ecea2acdb5c80dbdac4546a4b3dff94fef3bbc3d7568ff01395af99ed6c36f3@ec2-107-20-243-220.compute-1.amazonaws.com:5432/d6u9e77r40atnf');
+		$dbUrl = getenv('DATABASE_URL');
 		if (!isset($dbUrl) || empty($dbUrl)) {
 			// example localhost configuration URL with user: "ta_user", password: "ta_pass"
 			// and a database called "scripture_ta"
-			// $dbUrl = "postgres://ta_user:ta_pass@localhost:5432/scripture_ta";
+			$dbUrl = "postgres://ta_user:ta_pass@localhost:5432/scripture_ta";
 			// NOTE: It is not great to put this sensitive information right
 			// here in a file that gets committed to version control. It's not
 			// as bad as putting your Heroku user and password here, but still
