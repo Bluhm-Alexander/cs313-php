@@ -1,4 +1,5 @@
 <?php
+    require "dbConnect.php";
     $db = get_db();
 
     include('../includes/header.php');
