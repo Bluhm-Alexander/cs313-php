@@ -8,7 +8,7 @@ Made By Alex Bluhm for CS313 Class
 }
 
 .nav_bar {
-	width:				1503px;
+    width:				1503px;
 }
 
 #requirements_div {
@@ -23,15 +23,45 @@ Made By Alex Bluhm for CS313 Class
 .framework {
     display:            table;
     width:              100%;
-    table-layout:       fixed; /* optional, for equal spacing */
+    outline:            2px solid blue;
+    /*table-layout:       fixed; /* optional, for equal spacing */
 }
 
 .div-row {
     display:            table-row;
 }
 
-.div-cell {
+.right-cell {
+    width:              400px;
+    padding:            0px 0px 0px 0px;
+    vertical-align:     top;
+}
+
+.div-left-cell {
+    width:              300px;
+    padding:            0px 2px 0px 2px;
+}
+
+.middle-cell {
+    vertical-align:     top;
+    width:              200px;
     display:            table-cell;
-    /*width:              100%;*/
-    padding:            2px 2px 2px 2px;
+    padding:            0px 0px 0px 0px;
+    /*position:           relative;*/
+}
+
+.center-cell {
+    margin:             auto;
+    display:            block;
+    text-align:         center;
+    padding:            20px 0px 0px 0px;
+}
+
+.div-right-cell {
+    text-align:         left;
+    height:             100%;
+}
+
+.fourth-cell {
+    padding:            0px 0px 0px 0px;         
 }
