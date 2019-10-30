@@ -30,6 +30,6 @@
 		</ul>
     <li>Fitness Application:</li>
         <ul>
-            <li><a href="<?php echo $upOne; ?>fitness/fitnessHomeScreen.php">Fitness Application</a></li>
+            <li><a href="<?php echo $upOne; ?>fitness/login.php">Fitness Application</a></li>
         </ul>
 </ul>
