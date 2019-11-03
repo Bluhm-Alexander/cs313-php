@@ -23,7 +23,11 @@ Made By Alex Bluhm for CS313 Class
 .framework {
     display:            table;
     width:              100%;
-    outline:            2px solid blue;
+    border-radius:      25px;
+    box-shadow:         5px 10px 8px #888888;
+    border:				2px solid #888888;
+    padding:            10px;
+    margin-bottom:      20px;
     /*table-layout:       fixed; /* optional, for equal spacing */
 }
 
@@ -64,4 +68,31 @@ Made By Alex Bluhm for CS313 Class
 
 .fourth-cell {
     padding:            0px 0px 0px 0px;         
+}
+
+.noBullets {
+    list-style-type: none;
+}
+
+.button-container {
+    margin-left: 80%;
+}
+
+.button-gen {
+    background-color :#006797;
+    border: 0;
+    color: white;
+    padding: 10px 20px; 
+}
+
+.button-gen:hover {
+    background: green;
+    color: Black;
+    text-decoration: none;  
+}
+
+.error {
+    background-color: red;
+    width: 100%;
+    padding: 4px;
 }

@@ -1,0 +1,41 @@
+/* Login and sign up style sheet */
+
+.noBullets {
+    list-style-type: none;
+}
+
+.innerloginbox {
+    margin: 20% auto;
+    /*position:relative;*/
+    width: 200px;
+    height: 200px;
+}
+
+.loginBox {
+    margin: 0px auto auto auto;
+    /*position:relative;*/
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    border:				2px solid #888888;
+}
+
+.button-container {
+    margin:  50px auto auto 70%;
+    width: 200px;
+    height: 100px;
+}
+
+.button-gen {
+    background-color :#006797;
+    border: 0;
+    color: white;
+    padding: 10px 20px; 
+}
+
+.button-gen:hover {
+    background: green;
+    color: Black;
+    text-decoration: none;  
+}

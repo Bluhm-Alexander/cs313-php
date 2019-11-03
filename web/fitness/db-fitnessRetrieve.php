@@ -23,8 +23,17 @@
         $statement->execute();
         $ExerciseTableResult = $statement->fetchAll();
 
+        // routine table
+        $statement = $db->prepare("SELECT * FROM routines");
+        $statement->execute();
+        $RoutineTableResult = $statement->fetchAll();
 
-        $tables=["exerciseTable"=> $ExerciseTableResult];
+        // routine exercises table
+        $statement = $db->prepare("SELECT * FROM routineexercises");
+        $statement->execute();
+        $routineExercisesResult = $statement->fetchAll();
+
+        $tables=["exerciseTable"=> $ExerciseTableResult, "routinesTable"=> $RoutineTableResult, "routineExercisesTable"=> $routineExercisesResult];
         echo json_encode($tables);
         exit;
     }
