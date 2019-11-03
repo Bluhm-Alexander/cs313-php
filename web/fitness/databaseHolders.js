@@ -39,8 +39,8 @@ function setDefaultReps( info ) {
 
 /* Redirect to login page */
 function toLoginPage() {
-    alert ("change places");
-    //window.location.replace("login.php");
+    //alert ("change places");
+    window.location.replace("login.php");
 }
 /**
  * Run AJAX at page load
